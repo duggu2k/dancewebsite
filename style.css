@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(179, 142, 182);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav{
+    background: black;
+}
+nav ul{
+    display: flex;
+    color: white;
+    list-style-type: none;
+    align-items: center;
+    padding:  10px;
+    font-size: 13px;
+    
+}
+ul li{
+    padding: 0px 25px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.logo img{
+    width: 40px;
+    padding: 0px 10px;
+}
+.container
+{
+    min-height: 70vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url("bgspotif.jpg");
+    font-size: 20px;
+    font-weight: bolder;
+}
+.songlist{
+    margin-top: 20px;
+    width: 30%;
+}
+.songsItem {
+    display: flex;
+    height: 40px;
+    background: white;
+    color: black;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+    padding-right: 10px;
+}
+.songsItem img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.bottom{
+
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    height: 100px;
+    background: black;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    color: white;
+}
+.bottom input{
+    width: 70%;
+    cursor: pointer;
+}
+.icons{
+    margin: 12px;
+}
+.icons i{
+    padding: 0px 10px;
+    cursor: pointer;
+}
+.infoSong img{
+    width: 40px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+   
+
+
+
+@media  (max-width:700px){
+    .songlist{
+        width: 70%;
+    }
+    songsItem {
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        font-size: initial;
+        background: white;
+        color: black;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: space-between;
+        margin: 30px 0;
+        padding-right: 10px;
+    }
+}
